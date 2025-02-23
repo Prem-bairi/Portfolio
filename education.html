@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(6, 4, 53);
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(8, 8, 81);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+        }
+        nav ul li a:hover{
+            color: rgb(68, 68, 221);
+        }
+        .left{
+            font-size: 2.5rem;
+            text-shadow: 0px 0px 10px cyan,
+                         0px 0px 20px cyan,
+                         0px 0px 40px cyan,
+                         0px 0px 80px cyan;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 50px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .education-section {
+            display: flex;
+            align-items: center;
+            background:rgb(8, 8, 81);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease-in-out;
+            max-width: 1000px;
+            width: 100%;
+        }
+        .education-section:hover {
+            transform: translateY(-5px);
+        }
+        .education-image {
+            flex: 1;
+            text-align: center;
+        }
+        .education-image img {
+            width: 90%;
+            border-radius: 10px;
+            box-shadow: 0px 6px 20px rgba(100, 231, 243, 0.436);
+            
+        }
+        .education-details {
+            flex: 2;
+            padding: 20px;
+        }
+        h2 {
+            color: #eff4f6;
+            font-size: 32px;
+            font-weight: 600;
+            border-bottom: 4px solid #ff7b54;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: white;
+        }
+        footer {
+    background-color: rgb(8, 8, 81);
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+        }
+
+        .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1100px;
+    margin: auto;
+        }
+
+    .footer-container div {
+    margin: 7px;
+    min-width: 200px;
+    }
+
+.footer-container h2, 
+.footer-container h3 {
+    color: rgb(95, 87, 241);
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #ddd;
+    transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #f8b400;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 6%;
+}
+.footer-social img {
+            width: 25px;
+            height: 25px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+.footer-social img:hover{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Prem's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contactme.html">Contact Me</a></li>
+                </ul>
+            </div>
+         </nav>
+         <div class="container">
+            <div class="education-section">
+                <div class="education-image">
+                    <img src="3d image.webp" alt="Education Illustration">
+                </div>
+                <div class="education-details">
+                    <h2>Education Details</h2>
+                    <p><strong>Schooling:</strong> Bhangamora N.K.N.C.M. Institution (Year: 2017 - 2024)</p>
+                    <p><strong>College:</strong> JIS College Of Engineering</p>
+                    <p><strong>Degree:</strong> Bachelor of Technology (B.Tech) in Information Technology (Batch : 2024-28)</p>
+                    <p><strong>Course Details:</strong> Specialized in Software Development, Data Structures, and AI.</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-about">
+                    <h3>Prem Bairi</h3>
+                    <p>First-year student | Passionate about Web Development |</p>
+                    <p>Graphic Designer | Tech Enthusiastic |</p>
+                </div>
+    
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="contactme.html">Contact</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-social">
+                    <h3>Follow Me</h3>
+                    <a href="https://www.instagram.com/_prembairi?igsh=MXFrMHQydjg5cHJtYw==" target="_blank">
+                        <img src="instagram-logo.png" alt="">
+                    </a>
+                    <a href="https://www.facebook.com/share/17MErJvZoM/?mibextid=qi2Omg" target="_blank">
+                        <img src="facebook-logohkjkjkjkjkjk.png" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/in/prem-bairi-b03167288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                        <img src="linkedin-shiny-icon-logo-5.png" alt="">
+                    </a>
+                    <a href="https://x.com/prembairi7?t=OAC2-ts9hMNagnvMP4sgsg&s=09" target="_blank">
+                        <img src="twitter-x-logo-png-9.png" alt="">
+                    </a>
+                </div>
+    
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p>Email: prembairi7@gmail.com</p>
+                    <p>Phone: +91 8100238166</p>
+                </div>
+            </div>
+    
+            <div class="footer-bottom">
+                <p>&copy; 2025 Prem Bairi. All rights reserved.</p>
+            </div>
+        </footer>
+</body>
+</html>
