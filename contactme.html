@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(6, 4, 53);
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(8, 8, 81);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+        }
+        nav ul li a:hover{
+            color: rgb(68, 68, 221);
+        }
+        .left{
+            font-size: 2.5rem;
+            text-shadow: 0px 0px 10px cyan,
+                         0px 0px 20px cyan,
+                         0px 0px 40px cyan,
+                         0px 0px 80px cyan;
+        }
+        .contact-container {
+        display: flex;
+        background: rgb(81, 26, 132);
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0px 10px 20px rgba(22, 244, 236, 0.916);
+        margin-left: 240px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 1000px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .contact-info {
+        flex: 1;
+        padding: 20px;
+    }
+    .contact-info h2 {
+        font-size: 26px;
+        color: #fef8f8;
+        margin-bottom: 10px;
+    }
+    .contact-info p {
+        color: #fffbfb;
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+    }
+    .social-links {
+        display: flex;
+        gap: 15px;
+    }
+    .social-icon {
+        font-size: 20px;
+        color: #201548;
+        transition: 0.3s;
+    }
+    .social-icon:hover {
+        color: #2b5876;
+    }
+    .contact-form {
+        flex: 1;
+        padding: 20px;
+    }
+    .input-group {
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .input-group input,
+    .input-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        outline: none;
+        font-size: 16px;
+    }
+    .input-group label {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: #aaa;
+        transition: 0.3s;
+    }
+    .input-group input:focus ~ label,
+    .input-group textarea:focus ~ label,
+    .input-group input:valid ~ label,
+    .input-group textarea:valid ~ label {
+        top: -10px;
+        left: 10px;
+        font-size: 12px;
+        color: #28223e;
+    }
+    .send-btn {
+        background: rgb(8, 8, 81);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        filter: drop-shadow(0px 0px 10px rgba(249, 246, 246, 0.5));
+    }
+    .send-btn:hover {
+        background: #ae2b9e;
+    }
+    .social-links{
+            display: flex;
+            gap: 10px;
+        }
+        .social-links a {
+            display: inline-block;
+        }
+        .social-links img {
+            width: 25px;
+            height: 25px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        .social-links img:hover{
+            transform: scale(1.1);
+        }
+        footer {
+    background-color: rgb(8, 8, 81);
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+        }
+
+        .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1100px;
+    margin: auto;
+        }
+
+    .footer-container div {
+    margin: 7px;
+    min-width: 200px;
+    }
+
+.footer-container h2, 
+.footer-container h3 {
+    color: rgb(95, 87, 241);
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #ddd;
+    transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #f8b400;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 6%;
+}
+.footer-social img {
+            width: 25px;
+            height: 25px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+.footer-social img:hover{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Prem's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Let's Connect</h2>
+                <p>Feel free to reach out for collaborations or any queries.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/_prembairi?igsh=MXFrMHQydjg5cHJtYw==" target="_blank">
+                        <img src="instagram-logo.png" alt="">
+                    </a>
+                    <a href="https://www.facebook.com/share/17MErJvZoM/?mibextid=qi2Omg" target="_blank">
+                        <img src="facebook-logohkjkjkjkjkjk.png" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/in/prem-bairi-b03167288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                        <img src="linkedin-shiny-icon-logo-5.png" alt="">
+                    </a>
+                    <a href="https://x.com/prembairi7?t=OAC2-ts9hMNagnvMP4sgsg&s=09" target="_blank">
+                        <img src="twitter-x-logo-png-9.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="#" method="POST">
+                    <div class="input-group">
+                        <input type="text" name="name" required>
+                        <label>Your Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="email" required>
+                        <label>Your Email</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea name="message" required></textarea>
+                        <label>Your Message</label>
+                    </div>
+                    <button type="submit" class="send-btn">Send Message</button>
+                </form>
+            </div>
+        </div>   
+        <footer>
+            <div class="footer-container">
+                <div class="footer-about">
+                    <h3>Prem Bairi</h3>
+                    <p>First-year student | Passionate about Web Development |</p>
+                    <p>Graphic Designer | Tech Enthusiastic |</p>
+                </div>
+    
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="contactme.html">Contact</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-social">
+                    <h3>Follow Me</h3>
+                    <a href="https://www.instagram.com/_prembairi?igsh=MXFrMHQydjg5cHJtYw==" target="_blank">
+                        <img src="instagram-logo.png" alt="">
+                    </a>
+                    <a href="https://www.facebook.com/share/17MErJvZoM/?mibextid=qi2Omg" target="_blank">
+                        <img src="facebook-logohkjkjkjkjkjk.png" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/in/prem-bairi-b03167288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                        <img src="linkedin-shiny-icon-logo-5.png" alt="">
+                    </a>
+                    <a href="https://x.com/prembairi7?t=OAC2-ts9hMNagnvMP4sgsg&s=09" target="_blank">
+                        <img src="twitter-x-logo-png-9.png" alt="">
+                    </a>
+                </div>
+    
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p>Email: prembairi7@gmail.com</p>
+                    <p>Phone: +91 8100238166</p>
+                </div>
+            </div>
+    
+            <div class="footer-bottom">
+                <p>&copy; 2025 Prem Bairi. All rights reserved.</p>
+            </div>
+        </footer>  
+</body>
+</html>
