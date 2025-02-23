@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(6, 4, 53);
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(8, 8, 81);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+        }
+        nav ul li a:hover{
+            color: rgb(68, 68, 221);
+        }
+        .left{
+            font-size: 2.5rem;
+            text-shadow: 0px 0px 10px cyan,
+                         0px 0px 20px cyan,
+                         0px 0px 40px cyan,
+                         0px 0px 80px cyan;
+        }
+
+.projects-section {
+    padding: 50px;
+}
+
+.projects-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    background: rgb(8, 8, 81);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 12px rgba(226, 19, 19, 0.732);
+}
+
+.project-icon {
+    width: 170px;
+    height: 150px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+    box-shadow:  0 0 10px rgba(239, 237, 237, 0.871);
+}
+
+.project-card:hover .project-icon {
+    transform: translateY(-10px);
+}
+
+.project-info {
+    
+    transition: bottom 0.3s ease-in-out;
+    position: absolute;
+    bottom: -100%;
+    left: auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(239, 237, 237, 0.871);
+    padding: 10px;
+    color: rgb(254, 252, 252);
+
+}
+
+.project-card:hover .project-info {
+    bottom: 20px;
+}
+h2 {
+    color: #eff4f6;
+            font-size: 32px;
+            font-weight: 600;
+            border-bottom: 4px solid #ff7b54;
+            display: inline-block;
+            padding-bottom: 5px;
+            display: flex;
+            justify-content: center;
+}
+footer {
+    background-color: rgb(8, 8, 81);
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+        }
+
+        .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1100px;
+    margin: auto;
+        }
+
+    .footer-container div {
+    margin: 7px;
+    min-width: 200px;
+    }
+
+.footer-container h2, 
+.footer-container h3 {
+    color: rgb(95, 87, 241);
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #ddd;
+    transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #f8b400;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 6%;
+}
+.footer-social img {
+            width: 25px;
+            height: 25px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+.footer-social img:hover{
+            transform: scale(1.1);
+        }
+      </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Prem's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contactme.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="projects-section">
+            <h2>My Projects</h2>
+            <div class="projects-container">
+                <div class="project-card" onclick="toggleDescription(this)">
+                    <img src="AI logo.jpg" alt="AI Chat GPT" class="project-icon">
+                    <div class="project-info">
+                        <h3>AI Chat GPT</h3>
+                        <p>An AI-powered chatbot capable of understanding and generating human-like text.</p>
+                    </div>
+                </div>
+                <div class="project-card" onclick="toggleDescription(this)">
+                    <img src="app clone.jpg" alt="Website Clone" class="project-icon">
+                    <div class="project-info">
+                        <h3>Website Clone</h3>
+                        <p>A fully responsive clone of a popular website built using modern web technologies.</p>
+                    </div>
+                </div>
+                <div class="project-card" onclick="toggleDescription(this)">
+                    <img src="calculator1.jpg" alt="Digital Calculator" class="project-icon">
+                    <div class="project-info">
+                        <h3>Digital Calculator</h3>
+                        <p>A functional calculator built using JavaScript for performing arithmetic operations.</p>
+                    </div>
+                </div>
+                <div class="project-card" onclick="toggleDescription(this)">
+                    <img src="gamelogo.jpg" alt="Snack Game" class="project-icon">
+                    <div class="project-info">
+                        <h3>Snack Game</h3>
+                        <p>A fun and interactive snake game created using HTML, CSS, and JavaScript.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-about">
+                    <h3>Prem Bairi</h3>
+                    <p>First-year student | Passionate about Web Development |</p>
+                    <p>Graphic Designer | Tech Enthusiastic |</p>
+                </div>
+    
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="contactme.html">Contact</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-social">
+                    <h3>Follow Me</h3>
+                    <a href="https://www.instagram.com/_prembairi?igsh=MXFrMHQydjg5cHJtYw==" target="_blank">
+                        <img src="instagram-logo.png" alt="">
+                    </a>
+                    <a href="https://www.facebook.com/share/17MErJvZoM/?mibextid=qi2Omg" target="_blank">
+                        <img src="facebook-logohkjkjkjkjkjk.png" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/in/prem-bairi-b03167288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                        <img src="linkedin-shiny-icon-logo-5.png" alt="">
+                    </a>
+                    <a href="https://x.com/prembairi7?t=OAC2-ts9hMNagnvMP4sgsg&s=09" target="_blank">
+                        <img src="twitter-x-logo-png-9.png" alt="">
+                    </a>
+                </div>
+    
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p>Email: prembairi7@gmail.com</p>
+                    <p>Phone: +91 8100238166</p>
+                </div>
+            </div>
+    
+            <div class="footer-bottom">
+                <p>&copy; 2025 Prem Bairi. All rights reserved.</p>
+            </div>
+        </footer>  
+</body>
+</html>
