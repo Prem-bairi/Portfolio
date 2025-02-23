@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(6, 4, 53);
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(8, 8, 81);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+        }
+        nav ul li a:hover{
+            color: rgb(68, 68, 221);
+        }
+        .left{
+            font-size: 2.5rem;
+            text-shadow: 0px 0px 10px cyan,
+                         0px 0px 20px cyan,
+                         0px 0px 40px cyan,
+                         0px 0px 80px cyan;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, rgb(6, 4, 53), rgb(6, 4, 53));
+            color: white;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .services-header {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #d8f4f3;
+            border-bottom: 4px solid #ff7b54;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 20px 0;
+        }
+        .service-card {
+            background: #870e61;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(243, 240, 240, 0.671);
+            transition: transform 0.3s ease-in-out;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .service-icon {
+            font-size: 50px;
+            color: #ff7b54;
+            margin-bottom: 15px;
+        }
+        .service-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .service-description {
+            font-size: 16px;
+            color: #f7f2f2;
+            line-height: 1.6;
+        }
+        footer {
+    background-color: rgb(8, 8, 81);
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+        }
+
+        .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1100px;
+    margin: auto;
+        }
+
+    .footer-container div {
+    margin: 7px;
+    min-width: 200px;
+    }
+
+.footer-container h2, 
+.footer-container h3 {
+    color: rgb(95, 87, 241);
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #ddd;
+    transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #f8b400;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 6%;
+}
+.footer-social img {
+            width: 25px;
+            height: 25px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+.footer-social img:hover{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Prem's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contactme.html">Contact Me</a></li>
+                </ul>
+            </div>
+         </nav>
+         <div class="container">
+            <h2 class="services-header">My Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <div class="service-title">Web Development</div>
+                    <div class="service-description">Creating modern and responsive websites using HTML, CSS, and JavaScript.</div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <div class="service-title">UI/UX Design</div>
+                    <div class="service-description">Designing clean and user-friendly interfaces for web and mobile applications.</div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <div class="service-title">App Development</div>
+                    <div class="service-description">Building interactive mobile applications with a focus on performance and usability.</div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-about">
+                    <h2>Prem Bairi</h2>
+                    <p>First-year student | Passionate about Web Development |</p>
+                    <p>Graphic Designer | Tech Enthusiastic |</p>
+                </div>
+    
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="contactme.html">Contact</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-social">
+                    <h3>Follow Me</h3>
+                    <a href="https://www.instagram.com/_prembairi?igsh=MXFrMHQydjg5cHJtYw==" target="_blank">
+                        <img src="instagram-logo.png" alt="">
+                    </a>
+                    <a href="https://www.facebook.com/share/17MErJvZoM/?mibextid=qi2Omg" target="_blank">
+                        <img src="facebook-logohkjkjkjkjkjk.png" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/in/prem-bairi-b03167288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                        <img src="linkedin-shiny-icon-logo-5.png" alt="">
+                    </a>
+                    <a href="https://x.com/prembairi7?t=OAC2-ts9hMNagnvMP4sgsg&s=09" target="_blank">
+                        <img src="twitter-x-logo-png-9.png" alt="">
+                    </a>
+                </div>
+    
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p>Email: prembairi7@gmail.com</p>
+                    <p>Phone: +91 8100238166</p>
+                </div>
+            </div>
+    
+            <div class="footer-bottom">
+                <p>&copy; 2025 Prem Bairi. All rights reserved.</p>
+            </div>
+        </footer>
+</body>
+</html>
